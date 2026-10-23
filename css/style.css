@@ -1,0 +1,29 @@
+/* root : the whole page */
+
+
+
+:root {
+  --night: #1b1530;
+  --haunted-purple: #3b2a5c;
+  --pumpkin: #f28c28;
+  --candlelight: #ffd166;
+  --slime: #7ed957;
+  --blood-red: #c0392b;
+  --bone: #f2ead3;
+  --outline: #1a1423;
+}
+
+html,
+body {
+  margin: 0;                  /* browsers add 8px of margin by default, so remove it */
+  height: 100%;               /* page fills the whole window */
+  overflow: hidden;           /* no scrollbars, since the game handles its own scrolling */
+  background: var(--night);   /* use your colour variable */
+}
+
+#game-canvas {
+  display: block;   /* a canvas is "inline" by default, which leaves a tiny gap below it */
+  width: 100vw;     /* 100% of the viewport width */
+  height: 100vh;    /* 100% of the viewport height */
+}
+
